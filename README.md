@@ -32,9 +32,19 @@ and change host mount directory in run script
 ```
 execute run1.sh run2.sh run3.sh
 ```
-### 5. execute zookeeper_start.sh in each container
-
-### 6. execute kafka_start.sh in each container
+### 5. start zookeeper
+```
+execute zookeeper_start.sh in each container
+```
+### 6. start kafka
+```
+execute kafka_start.sh in each container
+```
+### 7. start spark in master node
+```
+$ ~/spark/sbin/start-all.sh
+$ ~/spark/sbin/start-history-server.sh
+```
 
 ## Spark 클러스터 구성 설명
 
@@ -57,20 +67,4 @@ bin/kafka-console-consumber.sh –bootsrap-server localhost:9092 –topic topicn
 
 # topic 생성
 bin/kafka-topics.sh --create --zookeeper kafka1:2181,kafka2:2181,kafka3:2181/twitter --replication-factor 3 --partitions 1 --topic connect-configs
-```
-
-## Spark 기본 명령어 목록 
-
-1. Spark 시작
-진행 노드 : master
-```
-$ ~/spark/sbin/start-all.sh
-$ ~/spark/sbin/start-history-server.sh
-```
-2. Spark 종료
-진행 노드 : master
-```
-$ ~/spark/sbin/stop-all.sh
-$ ~/spark/sbin/stop-history-server.sh
-$ rm -rf ~/spark/evevntLog/*
 ```
