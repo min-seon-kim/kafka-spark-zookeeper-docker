@@ -2,7 +2,7 @@
 
 ## 위치 설명
 
-kafka/cluster : kafka cluster를 Docker로 구성. 
+docker/base : kafka cluster를 Dockerfile로 구성. 
 
 cluster : cluster 를 analysis하는 코드.
 
