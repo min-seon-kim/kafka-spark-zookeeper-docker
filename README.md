@@ -67,7 +67,7 @@ bin/kafka-topics.sh --create --zookeeper kafka1:2181,kafka2:2181,kafka3:2181/twi
 $ ~/spark/sbin/start-all.sh
 $ ~/spark/sbin/start-history-server.sh
 ```
-3. Spark 종료
+2. Spark 종료
 진행 노드 : master
 ```
 $ ~/spark/sbin/stop-all.sh
