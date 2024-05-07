@@ -6,6 +6,12 @@ kafka/cluster : kafka cluster를 Docker로 구성.
 
 cluster : cluster 를 analysis하는 코드.
 
+
+## 전체 클러스터 구성
+<img width="477" alt="image" src="https://github.com/sperospera1225/kafka-spark-zookeeper-docker/assets/67995592/cdbe66c8-0247-4828-ac03-b19dff53f84e">
+구성환 환경에서는 별도의 zookeeper를 사용하고 port를 3개 모두 통일시켰다.
+
+
 ## Docker 환경 구성 방법
 ### 1. docker network setting
 ```
@@ -29,7 +35,7 @@ execute run1.sh run2.sh run3.sh
 
 ### 6. execute kafka_start.sh in each container
 
-## Spark 클러스터 구성 방법
+## Spark 클러스터 구성 설명
 
 1) 현재 컨테이너 3개를 zookeeper로 연동해서 띄워놓은 상태입니다.
 2) configuration(partition number, consumer group. etc.)를 설정해서 topic을 생성합니다.
@@ -37,11 +43,6 @@ execute run1.sh run2.sh run3.sh
 4) consumer코드로 data를 받아와서 처리합니다(spark로 넘겨줄수도 있고, database로 저장할 수도 있고)
 5) hadoop yarn기반의 resource manager를 통해 현재 3개의 노드에서 cluster모드로 설정해놓았습니다.
 6) Bigcomp는 Spark MLlib기반의 코드로 data processing을 하고 Elephas 라이브러리로 연동하여 딥러닝 모델 학습
-
-
-## 전체 클러스터 구성
-<img width="477" alt="image" src="https://github.com/sperospera1225/kafka-spark-zookeeper-docker/assets/67995592/cdbe66c8-0247-4828-ac03-b19dff53f84e">
-구성환 환경에서는 별도의 zookeeper를 사용하고 port를 3개 모두 통일시켰다.
 
 ## Kafka 기본 명령어 목록
 
