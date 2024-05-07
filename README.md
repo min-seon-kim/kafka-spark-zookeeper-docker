@@ -1,4 +1,4 @@
-# Kafka-Spark Cluster
+![image](https://github.com/sperospera1225/kafka-spark-zookeeper-docker/assets/67995592/92b77325-941c-489d-878a-e4815dad9cf3)# Kafka-Spark Cluster
 
 ## 위치 설명
 
@@ -35,3 +35,25 @@ execute run1.sh run2.sh run3.sh
 4) consumer코드로 data를 받아와서 처리합니다(spark로 넘겨줄수도 있고, database로 저장할 수도 있고)
 5) hadoop yarn기반의 resource manager를 통해 현재 3개의 노드에서 cluster모드로 설정해놓았습니다.
 6) Bigcomp는 Spark MLlib기반의 코드로 data processing을 하고 Elephas 라이브러리로 연동하여 딥러닝 모델 학습
+
+
+## 전체 클러스터 구성
+<img width="477" alt="image" src="https://github.com/sperospera1225/kafka-spark-zookeeper-docker/assets/67995592/cdbe66c8-0247-4828-ac03-b19dff53f84e">
+구성환 환경에서는 별도의 zookeeper를 사용하고 port를 3개 모두 통일시켰다.
+
+## Kafka 기본 명령어 목록
+
+```
+1. 토픽 리스트 확인.
+bin/kafka-topics.sh --list --zookeeper kafka1:2181,kafka2:2181,kafka3:2181/twitter  
+
+# console producer 실행
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic topicname
+
+# console consumer 실행
+bin/kafka-console-consumber.sh –bootsrap-server localhost:9092 –topic topicname
+
+# topic 생성
+bin/kafka-topics.sh --create --zookeeper kafka1:2181,kafka2:2181,kafka3:2181/twitter --replication-factor 3 --partitions 1 --topic connect-configs
+```
+
