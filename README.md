@@ -4,10 +4,9 @@
 
 kafka/cluster : kafka cluster를 Docker로 구성. 
 
-cluster : cluster 를 analysis하는 코드. 
+cluster : cluster 를 analysis하는 코드.
 
-Docker 환경 구성 방법 
-
+## Docker 환경 구성 방법
 ### 1. docker network setting
 ```
 docker network create --gateway 172.28.5.254 --subnet 172.28.0.0/16 base_2
