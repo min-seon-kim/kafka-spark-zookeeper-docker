@@ -6,7 +6,7 @@
 #### cluster : cluster 를 analysis하는 코드. 
 
 
-## 도커 환경 구성 방법 
+## Docker 환경 구성 방법 
 
 #### 1. docker network setting
 
