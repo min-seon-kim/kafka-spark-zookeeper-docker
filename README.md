@@ -16,6 +16,9 @@ cluster : cluster 를 analysis하는 코드.
 ## Docker 이미지 파일
 구현의 용이성을 위하여 Kafka-Spark 클러스터로 구성된 도커 이미지 파일을 다음 docker hub에 업로드 하였습니다.
 https://hub.docker.com/repository/docker/sperospera1225/kafka_spark_cluster/general
+```
+docker pull sperospera1225/kafka_spark_cluster
+```
 
 ## Docker 환경 구성 방법
 ### 1. docker network setting
