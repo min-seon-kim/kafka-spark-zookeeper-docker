@@ -1,5 +1,3 @@
-![image](https://github.com/sperospera1225/kafka-spark-zookeeper-docker/assets/67995592/92b77325-941c-489d-878a-e4815dad9cf3)# Kafka-Spark Cluster
-
 ## 위치 설명
 
 #### kafka/cluster : kafka cluster를 Docker로 구성. 
