@@ -43,7 +43,8 @@ execute run1.sh run2.sh run3.sh
 3) 생성된 topic으로 kafka producer로 data를 ingest합니다
 4) consumer코드로 data를 받아와서 처리합니다(spark로 넘겨줄수도 있고, database로 저장할 수도 있고)
 5) hadoop yarn기반의 resource manager를 통해 현재 3개의 노드에서 cluster모드로 설정해놓았습니다.
-6) Bigcomp는 Spark MLlib기반의 코드로 data processing을 하고 Elephas 라이브러리로 연동하여 딥러닝 모델 학습
+6) Spark MLlib기반의 코드로 data processing을 하고 Elephas 라이브러리로 연동하여 딥러닝 모델을 학습합니다.
+7) 분류된 데이터를 MongoDB에 Spark-Mongo Connector를 이용하여 실시간으로 저장합니다.
 
 ## Kafka 기본 명령어 목록
 
