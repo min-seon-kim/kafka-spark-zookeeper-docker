@@ -10,8 +10,12 @@ cluster : cluster 를 analysis하는 코드.
 ## 전체 클러스터 구성
 <img width="477" alt="image" src="https://github.com/sperospera1225/kafka-spark-zookeeper-docker/assets/67995592/cdbe66c8-0247-4828-ac03-b19dff53f84e">
 
-* 구성환 환경에서는 별도의 zookeeper를 사용하고 port를 3개 모두 통일시켰다.
+* 그림과 같이 구성환 환경에서는 별도의 zookeeper를 사용하고 port를 3개 모두 통일시켰다.
 
+
+## Docker 이미지 파일
+구현의 용이성을 위하여 Kafka-Spark 클러스터로 구성된 도커 이미지 파일을 다음 docker hub에 업로드 하였습니다.
+https://hub.docker.com/repository/docker/sperospera1225/kafka_spark_cluster/general
 
 ## Docker 환경 구성 방법
 ### 1. docker network setting
@@ -45,10 +49,6 @@ execute kafka_start.sh in each container
 $ ~/spark/sbin/start-all.sh
 $ ~/spark/sbin/start-history-server.sh
 ```
-
-## Docker 이미지 파일
-구현의 용이성을 위하여 Kafka-Spark 클러스터로 구성된 도커 이미지 파일을 다음 docker hub에 업로드 하였습니다.
-https://hub.docker.com/repository/docker/sperospera1225/kafka_spark_cluster/general
 
 ## Spark 딥러닝 학습 상세 과정
 
