@@ -46,7 +46,7 @@ $ ~/spark/sbin/start-all.sh
 $ ~/spark/sbin/start-history-server.sh
 ```
 
-## Spark 클러스터 구성 설명
+## Spark 딥러닝 학습 상세 과정
 
 1) Kafka에서 ingestion한 topic의 consumer코드로 data를 받아옵니다.
 2) hadoop yarn기반의 resource manager를 통해 현재 3개의 노드에서 spark-cluster모드로 설정해놓았습니다.
