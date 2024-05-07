@@ -10,7 +10,7 @@ cluster : cluster 를 analysis하는 코드.
 ## 전체 클러스터 구성
 ![프로젝트 구조](https://user-images.githubusercontent.com/47740690/127730925-b4fd7664-9e6b-4fb9-9a33-b4b2dcd0221b.PNG)
 
-* 그림과 같이 구성환 환경에서는 별도의 zookeeper를 사용하고 port를 3개 모두 통일시켰다.
+* 구성환 환경에서는 별도의 zookeeper를 사용하고 port를 3개 모두 통일시켰다.
 
 
 ## Docker 이미지 파일
