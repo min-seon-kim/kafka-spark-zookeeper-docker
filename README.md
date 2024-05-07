@@ -40,7 +40,7 @@ execute zookeeper_start.sh in each container
 ```
 execute kafka_start.sh in each container
 ```
-### 7. start spark in master node
+### 7. start spark in master node
 ```
 $ ~/spark/sbin/start-all.sh
 $ ~/spark/sbin/start-history-server.sh
