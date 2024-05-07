@@ -9,7 +9,8 @@ cluster : cluster 를 analysis하는 코드.
 
 ## 전체 클러스터 구성
 <img width="477" alt="image" src="https://github.com/sperospera1225/kafka-spark-zookeeper-docker/assets/67995592/cdbe66c8-0247-4828-ac03-b19dff53f84e">
-구성환 환경에서는 별도의 zookeeper를 사용하고 port를 3개 모두 통일시켰다.
+
+* 구성환 환경에서는 별도의 zookeeper를 사용하고 port를 3개 모두 통일시켰다.
 
 
 ## Docker 환경 구성 방법
